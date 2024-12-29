@@ -1,0 +1,206 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: #9AA6B2;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #215a6d;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .static-section {
+    width: 25%; /* La sección izquierda ocupa el 25% */
+    background-color: #2d2d29; /* Fondo de color */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: absolute;
+    bottom: -40px;
+    left: 60px;
+    transform: translateX(-50%);
+  }
+  .scrollable-section {
+    margin-left: 25%; /* Sección derecha comienza después de la fija */
+    width: 80%;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
+    border-top-right-radius: 10px;
+  }
+  
+  .links {
+    color: #bbbbbb;
+    margin-top: 90px; /* Espacio para la imagen circular */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 9%;
+    margin-left: -40%;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .static-section {
+    background: linear-gradient(to left, #2d2d29, #2d2d30);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .scrollable-section {
+    width: 75%;
+  }
+.end-gif{
+  padding-right: 110px;
+}
+.content-section{
+  padding-left: 50px;
+  padding-top: 15%;
+}
+.link-text {
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px 0;
+  width: 100%;
+  display: block; /* Asegura que los enlaces estén en bloque, uno debajo del otro */
+  color: #bbbbbb; /* Color predeterminado */
+}
+
+.link-text:visited {
+  color: #bbbbbb; /* Evita el color morado para enlaces visitados */
+}
+
+.link-text:hover {
+  color: #3ca2a2; /* Color al pasar el mouse */
+}
+
+.link-text:active {
+  color: #3ca2a2; /* Color cuando se hace clic */
+}
+.typewriter {
+  display: inline-block; /* Asegura que el texto ocupe solo el espacio necesario */
+  width: 0; /* Inicia desde 0 */
+  overflow: hidden; /* Esconde el texto que no ha sido mostrado aún */
+  white-space: nowrap; /* Evita que el texto haga saltos de línea */
+  margin: 0; /* Elimina márgenes adicionales */
+  padding: 0; /* Elimina relleno adicional */
+  border-right: 0.15em solid #F4EDD3; /* Cursor parpadeante */
+  animation: typing 1.5s steps(18, end) 1s 1 normal both, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 32%; /* Revela todo el texto */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent; /* Hace que el borde parpadee */
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px 0;
+  width: 90%; /* Ajusta según necesites */
+}
+.project-card h2{
+  margin-left: 10px;
+}
+.icon{
+  position: relative;
+  top: 6px;
+}
+.baner-img img{
+  border-radius: 10px;
+}
+.project-card .project-info {
+  padding: 10px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border:#F4EDD3 1px solid
+}
+.tecnologias {
+  display: flex;
+}
+.project-info {
+  padding: 10px;
+}
+.project-info img:hover{
+  border:#F6F4F0 1px solid
+}
+
+.project-card h2 {
+  margin-top: 5px;
+}
+
+.sobre, .exp, .educacion{
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+  width: 90%;
+}
+.sobre:hover{
+  background: linear-gradient(90deg, #2d2d29, #215a6d);
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+.exp:hover{
+  background: linear-gradient(90deg, #2d2d29, #215a6d);
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+.educacion:hover{
+  background: linear-gradient(90deg, #2d2d29, #215a6d);
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
